@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="App1.GeoLocation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid RequestedTheme="Default">
+        <Canvas HorizontalAlignment="Left" Height="80" Margin="7,126,0,0" VerticalAlignment="Top" Width="340" Background="#FFCAD4CC"/>
+        <Canvas HorizontalAlignment="Left" Height="426" Margin="7,206,0,0" VerticalAlignment="Top" Width="340" RenderTransformOrigin="0.5,0.5" Background="White" CompositeMode="Inherit">
+            <Canvas.RenderTransform>
+                <CompositeTransform ScaleY="1"/>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="10,16,0,0" VerticalAlignment="Top" Width="340" Source="http://www.rasmussen.edu/images/logo-internal.png"/>
+        <TextBox x:Name="txtBoxRas" Background="#FFA0A0A0" HorizontalAlignment="Left" Margin="59,149,0,0" Text="Text" VerticalAlignment="Top" Width="266" BorderBrush="#FFE7E5D9" IsReadOnly="True" Foreground="Black"/>
+        <TextBox x:Name="txtBoxFooter" HorizontalAlignment="Left" Margin="41,600,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="271" BorderBrush="#FFFDFDFD" IsReadOnly="True" Background="#FFA0A0A0"/>
+        <Canvas x:Name="canvasTop" HorizontalAlignment="Left" Background="#FFB5C3B8" Height="94" VerticalAlignment="Top" CompositeMode="MinBlend" Margin="0,0,0,0" Width="360"/>
+        <Canvas HorizontalAlignment="Left" Height="66" Margin="18,220,0,0" VerticalAlignment="Top" Width="318" Background="#FFCAD4CC"/>
+        <HyperlinkButton Content="Inventory" Margin="147,94,0,0" VerticalAlignment="Top" Click="HyperlinkButton_Click_4"/>
+        <HyperlinkButton Content="API" Margin="274,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,0.365" Click="HyperlinkButton_Click"/>
+        <HyperlinkButton Content="Home" Margin="30,94,0,0" VerticalAlignment="Top" Click="HyperlinkButton_Click_1"/>
+
+        <Button x:Name="btnGetGPS2" Content="Get GPS Info" Margin="127,237,0,0" VerticalAlignment="Top" Click="OneShotLocation_Click" Background="Gray"/>
+        <TextBlock x:Name="StatusTextBlock" HorizontalAlignment="Left" Margin="28,400,0,66" TextWrapping="Wrap" Text="Status:" Width="253" Foreground="Gray"/>
+        <TextBlock x:Name="LatitudeTextBlock" HorizontalAlignment="Left" Margin="31,301,0,307" TextWrapping="Wrap" Text="Latitude:"  Width="240" Foreground="Gray"/>
+        <TextBlock x:Name="LongitudeTextBlock" HorizontalAlignment="Left" Margin="31,336,0,267" TextWrapping="Wrap" Text="Longitude:"  Width="240" Foreground="Gray"/>
+
+    </Grid>
+</Page>

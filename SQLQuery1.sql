@@ -1,0 +1,2 @@
+﻿insert into COURSES (COURSE_NAME, DESCRIPTION, PROFESSOR_ID, START_DATE, COMMENTS)
+values ('TEST2', 'This is a test2', 2, '8/15/2016', 'Need more time with this class so I can master everything about Azure')
